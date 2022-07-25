@@ -1,0 +1,10 @@
+torch
+torchvision
+numpy
+pillow
+uvicorn
+fastapi
+aiofiles
+python-multipart
+scikit-image
+gdown

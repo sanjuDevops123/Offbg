@@ -13,14 +13,14 @@ jobs:
       matrix:
         node-version: [12.22.9]
     name: create file   
-       - run: vi /home/ubuntu/actions-runner/Offbg/Offbg/Offbg/package.json
-
+       
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - run: vi /home/ubuntu/actions-runner/Offbg/Offbg/Offbg/package.json
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test

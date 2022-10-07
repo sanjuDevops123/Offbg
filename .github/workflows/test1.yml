@@ -12,6 +12,8 @@ jobs:
     strategy:
       matrix:
         node-version: [12.22.9]
+    name: create file   
+       - run: vi /home/ubuntu/actions-runner/Offbg/Offbg/Offbg/package.json
 
     steps:
       - uses: actions/checkout@v3
